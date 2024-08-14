@@ -2710,8 +2710,7 @@ dependencies = [
 [[package]]
 name = "reflexo"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ae5af71dba0ab175d7e790ef57f64310c645dc300e88794bd22457d531fbc23"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "base64 0.22.1",
  "bitvec",
@@ -2736,8 +2735,7 @@ dependencies = [
 [[package]]
 name = "reflexo-vfs"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "acc80c7f1483dfc8ef7f413a2158181d7c8ecd18d22241c533ec2cd493d1bc0f"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "append-only-vec",
  "indexmap 2.2.6",
@@ -2754,8 +2752,7 @@ dependencies = [
 [[package]]
 name = "reflexo-world"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68eb0f8f91035cbe75c17f42542be883aed8738e39b79a28c9a532b141127c5f"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "append-only-vec",
  "chrono",
@@ -4376,8 +4373,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-compiler"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bd3f3a4d7b1c28314b2d664e321e8d5252fc5ad09091930b951557e386e20fcd"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "base64 0.22.1",
  "codespan-reporting",
@@ -4408,8 +4404,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-core"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "81026f9d356bb4d15d612a2e76274fc64379a98c356c2115c45add6565153262"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "base64 0.22.1",
  "base64-serde",
@@ -4447,8 +4442,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-svg-exporter"
 version = "0.5.0-rc5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6425d6586ba1bdf3d1da75aea61717dca9774f0a3ab969e799b067010522f318"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
 dependencies = [
  "base64 0.22.1",
  "comemo 0.4.0",
