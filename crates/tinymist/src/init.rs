@@ -516,6 +516,7 @@ impl CompileConfig {
                 inputs: Arc::new(Prehashed::new(inputs)),
                 font: command.font,
                 creation_timestamp: command.creation_timestamp,
+                cert_path: command.certification,
             });
         }
 
@@ -692,6 +693,12 @@ impl CompileConfig {
         self.typst_extra_args.as_ref()?.creation_timestamp
     }
 
+    /// Determines the certification path.
+    pub fn determine_certification_path(&self) -> Option<PathBuf> {
+        let extras = self.typst_extra_args.as_ref()?;
+        extras.cert_path.clone()
+    }
+
     fn determine_user_inputs(&self) -> ImmutDict {
         static EMPTY: Lazy<ImmutDict> = Lazy::new(ImmutDict::default);
 
@@ -793,6 +800,8 @@ pub struct CompileExtraOpts {
     pub font: CompileFontArgs,
     /// The creation timestamp for various output.
     pub creation_timestamp: Option<chrono::DateTime<chrono::Utc>>,
+    /// Path to  the certification file
+    pub cert_path: Option<PathBuf>, 
 }
 
 /// The path pattern that could be substituted.

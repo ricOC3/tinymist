@@ -75,6 +75,16 @@ pub struct CompileOnceArgs {
         hide(true),
     )]
     pub creation_timestamp: Option<DateTime<Utc>>,
+
+    /// Path to the certification file
+    ///
+    /// This value can be provided via the `--cert` option or the `TYPST_CERT` environment variable.
+    #[clap(
+        long = "cert",
+        env = "TYPST_CERT",
+        value_name = "CERT_PATH"
+    )]
+    pub certification: Option<PathBuf>,
 }
 
 /// Compiler feature for LSP world.
@@ -96,12 +106,19 @@ impl LspWorldBuilder {
         entry: EntryState,
         font_resolver: Arc<FontResolverImpl>,
         inputs: ImmutDict,
+        cert_path: Option<PathBuf>,
     ) -> ZResult<LspUniverse> {
+
+        let mut registry = HttpRegistry::default();
+        if let Some(ref cert_path) = cert_path {
+            registry.set_certificate_path(cert_path);
+        }
+
         Ok(LspUniverse::new_raw(
             entry,
             Some(inputs),
             Vfs::new(SystemAccessModel {}),
-            HttpRegistry::default(),
+            registry,
             font_resolver,
         ))
     }
