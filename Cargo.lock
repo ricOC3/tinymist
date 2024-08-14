@@ -2710,7 +2710,7 @@ dependencies = [
 [[package]]
 name = "reflexo"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "base64 0.22.1",
  "bitvec",
@@ -2735,7 +2735,7 @@ dependencies = [
 [[package]]
 name = "reflexo-vfs"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "append-only-vec",
  "indexmap 2.2.6",
@@ -2752,7 +2752,7 @@ dependencies = [
 [[package]]
 name = "reflexo-world"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "append-only-vec",
  "chrono",
@@ -4373,7 +4373,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-compiler"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "base64 0.22.1",
  "codespan-reporting",
@@ -4404,7 +4404,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-core"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "base64 0.22.1",
  "base64-serde",
@@ -4442,7 +4442,7 @@ dependencies = [
 [[package]]
 name = "typst-ts-svg-exporter"
 version = "0.5.0-rc5"
-source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#8c5034a2f280353c7fc82703b3e98a95c6b6af15"
+source = "git+https://github.com/ricOC3/typst.ts.git?branch=extend_v0.5.0-rc5_cert#e809db17a1e560da887709299bde435c528a5b62"
 dependencies = [
  "base64 0.22.1",
  "comemo 0.4.0",
